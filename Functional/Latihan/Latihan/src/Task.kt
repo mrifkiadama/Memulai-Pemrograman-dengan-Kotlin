@@ -5,13 +5,13 @@ fun main() {
     val lastChar = text["last"]
 
     // TODO 2
-    val cetak = with(text){
-        "$firstChar latter is ${this[0.toString()]}" +
-                "and ${this[5.toString()]} for $lastChar  second letter"
-    }
-    println(cetak)
+    println(firstChar)
+    println(lastChar)
 
 }
 
 // TODO 1
-fun String.getFirstAndLast() = mapOf<String, Char>()
+fun String.getFirstAndLast() = mapOf(
+        "first" to this.first(),
+        "last" to this.last()
+)

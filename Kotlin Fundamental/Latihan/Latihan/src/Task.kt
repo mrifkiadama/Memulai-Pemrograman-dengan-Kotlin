@@ -11,7 +11,7 @@ fun main() {
 
 fun calculate(valueA: Int, valueB: Int, valueC: Int?): String {
     // TODO 1
-    val result = valueA +(valueB - valueC!!)
+    val result = (valueA + (valueB - (valueC?: 100)))
     return generateResult(result)
 }
 
